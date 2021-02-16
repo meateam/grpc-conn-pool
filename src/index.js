@@ -89,7 +89,7 @@ class GrpcClient {
                 return new Promise((resolve, reject) => {
                     freeConnObj.conn[rpc](data, (err, res) => {
                         // Close connection if failed to connect to all addresses
-                        if (err.code === 14) this.replaceClosedConn(freeConnObj);
+                        if (err & err.code === 14) this.replaceClosedConn(freeConnObj);
 
                         if (callback) callback(err, res);
 
