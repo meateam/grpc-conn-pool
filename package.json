@@ -1,6 +1,6 @@
 {
   "name": "grpc-conn-pool",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "grpc connection pool for nodejs",
   "main": "src/index.js",
   "scripts": {
